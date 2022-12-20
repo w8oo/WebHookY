@@ -18,9 +18,9 @@ if response.status_code == 200:
         print("Error deleting webhook")
 else:
     print("Error getting webhook information")
-
+#(this will fail because the webhook has been deleted)
 data = {
-    "content": "This is a test message"
+    "content": "00O0X"
 }
 send_response = requests.post(WEBHOOK_URL, json=data)
 
